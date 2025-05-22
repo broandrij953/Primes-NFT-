@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepe Clicker - Моя Гра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="header">
+            <div class="header-left">
+                <span class="icon">✖️</span>
+                <span class="icon">ℹ️</span>
+            </div>
+            <div class="header-center">
+                <span class="game-title">Pepe Clicker</span>
+                <span class="icon gold-icon">🐸</span> </div>
+            <div class="header-right">
+                <span class="icon">📶</span>
+                <span class="icon">🔋<span class="battery-percent">51%</span></span>
+                <span class="icon">⚙️</span>
+                <span class="icon">🎁</span>
+            </div>
+        </header>
+
+        <section class="profile-section">
+            <div class="profile-avatar">👤</div>
+            <div class="profile-info">
+                <div class="profile-name">fancy</div>
+                <div class="profile-level" id="playerLevelDisplay">1 рівень</div>
+            </div>
+            <div class="profile-bonus">
+                <span class="icon">🏆</span>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-value" id="positionDisplay">100+</div>
+                <div class="stat-label">Позиція</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="clickIncomeDisplay">+1</div>
+                <div class="stat-label">Дохід за клік</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="passiveIncomeDisplay">+0</div>
+                <div class="stat-label">В час</div>
+            </section>
+
+        <div class="honey-counter" id="honeyCount">0</div>
+
+        <div class="level-progress-container">
+            <div class="level-text-top" id="levelProgressText">0 до підвищення рівня</div>
+            <div class="level-bar-background">
+                <div class="level-bar-fill" id="levelProgressBar" style="width: 0%;"></div>
+            </div>
+            <div class="current-level-display" id="currentLevelDisplay">рівень 1</div>
+        </div>
+
+        <main class="game-area">
+            <div class="pepe-image-wrapper" id="pepeImageWrapper">
+                <img src="assets/images/pepe.png" alt="Pepe" class="pepe-image" id="pepeImage">
+            </div>
+
+            <div class="honey-jar-container">
+                <div class="honey-jar-fill" id="honeyJarFill"></div>
+                <div class="honey-jar-value" id="honeyJarValue">0</div>
+            </div>
+        </main>
+
+        <button class="action-button" id="upgradeButton">Покращити дохід (Ціна: 100)</button>
+
+        <nav class="navbar">
+            <a href="#" class="nav-item active" data-tab="money">
+                <span class="nav-icon">💰</span>
+                <span>Монетки</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="upgrades">
+                <span class="nav-icon">⬆️</span>
+                <span>Улучшення</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="friends">
+                <span class="nav-icon">👫</span>
+                <span>Друзья</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="shop">
+                <span class="nav-icon">🛒</span>
+                <span>Магазин</span>
+            </a>
+            <a href="#" class="nav-item" data-tab="chest">
+                <span class="nav-icon">📦</span>
+                <span>Сундук</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
